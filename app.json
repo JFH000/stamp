@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "stamp",
+    "name": "APP_NAME",
     "slug": "stamp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,6 +31,21 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Usamos tu ubicación para confirmar que estás en el plan cuando haces check-in."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Necesitamos acceso a tus fotos para que elijas la foto de tu check-in.",
+          "cameraPermission": "Necesitamos la cámara para tomar la foto de tu check-in.",
+          "microphonePermission": false
         }
       ]
     ],
